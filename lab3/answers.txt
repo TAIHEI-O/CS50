@@ -1,0 +1,11 @@
+sort1 uses: Bubble
+
+How do you know?: Because the time was the fastest when the numbers were sorted.
+
+sort2 uses: Merge
+
+How do you know?: Because the time was the fastest when it was a random number.
+
+sort3 uses: Selection
+
+How do you know?: Because the time was the slowest when the numbers were sorted.

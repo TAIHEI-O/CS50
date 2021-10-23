@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="160" id="hZh-V9-QBX" customClass="ChatRoomTableViewCell" customModule="ChatTodoAppWithFirebase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hZh-V9-QBX" id="qq6-Uh-f3X">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20181124063727" translatesAutoresizingMaskIntoConstraints="NO" id="C7H-Lf-419">
+                        <rect key="frame" x="15" y="50" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="C7H-Lf-419" secondAttribute="height" multiplier="1:1" id="6AJ-cr-g9B"/>
+                            <constraint firstAttribute="width" constant="60" id="h7O-tO-Jds"/>
+                        </constraints>
+                    </imageView>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="メッセージがここに入ります。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6U-xS-424">
+                        <rect key="frame" x="85" y="25" width="250" height="110"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="zFF-mI-HcF"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhg-eN-RCO">
+                        <rect key="frame" x="340" y="108" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="メッセージがここに入ります。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cu7-Tl-TIO">
+                        <rect key="frame" x="195" y="25" width="255" height="110"/>
+                        <color key="backgroundColor" red="0.81960784313725488" green="0.66274509803921566" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="255" id="m9G-HF-ikx"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExL-8t-5Aj">
+                        <rect key="frame" x="151" y="113" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S6U-xS-424" firstAttribute="top" secondItem="qq6-Uh-f3X" secondAttribute="top" constant="25" id="53w-Xd-Whf"/>
+                    <constraint firstItem="C7H-Lf-419" firstAttribute="leading" secondItem="qq6-Uh-f3X" secondAttribute="leading" constant="15" id="5xL-LI-pcw"/>
+                    <constraint firstItem="Cu7-Tl-TIO" firstAttribute="top" secondItem="qq6-Uh-f3X" secondAttribute="top" constant="25" id="A6M-23-99n"/>
+                    <constraint firstItem="C7H-Lf-419" firstAttribute="centerY" secondItem="qq6-Uh-f3X" secondAttribute="centerY" id="Klb-qi-013"/>
+                    <constraint firstAttribute="bottom" secondItem="ExL-8t-5Aj" secondAttribute="bottom" constant="30" id="LB6-uO-u5O"/>
+                    <constraint firstAttribute="bottom" secondItem="Cu7-Tl-TIO" secondAttribute="bottom" constant="25" id="kiz-gw-Dac"/>
+                    <constraint firstItem="S6U-xS-424" firstAttribute="leading" secondItem="C7H-Lf-419" secondAttribute="trailing" constant="10" id="kqC-bM-4pQ"/>
+                    <constraint firstAttribute="bottom" secondItem="S6U-xS-424" secondAttribute="bottom" constant="25" id="mue-zd-eKU"/>
+                    <constraint firstAttribute="trailing" secondItem="Cu7-Tl-TIO" secondAttribute="trailing" constant="20" id="pf0-CW-Th8"/>
+                    <constraint firstItem="Cu7-Tl-TIO" firstAttribute="leading" secondItem="ExL-8t-5Aj" secondAttribute="trailing" constant="8" id="rV2-Cj-KK6"/>
+                    <constraint firstItem="S6U-xS-424" firstAttribute="bottom" secondItem="vhg-eN-RCO" secondAttribute="bottom" constant="10" id="xYB-XH-Idz"/>
+                    <constraint firstItem="vhg-eN-RCO" firstAttribute="leading" secondItem="S6U-xS-424" secondAttribute="trailing" constant="5" id="y8o-fy-QzP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageTextViewWidthConstraint" destination="zFF-mI-HcF" id="bDT-C6-hgp"/>
+                <outlet property="myDateLabel" destination="ExL-8t-5Aj" id="79J-BE-XOb"/>
+                <outlet property="myMessageTextView" destination="Cu7-Tl-TIO" id="ks6-Gh-xI8"/>
+                <outlet property="myMessageTextViewWidthConstraint" destination="m9G-HF-ikx" id="1RW-Bv-sGt"/>
+                <outlet property="partnerDateLabel" destination="vhg-eN-RCO" id="dt3-dG-3KC"/>
+                <outlet property="partnerMessageTextView" destination="S6U-xS-424" id="sgd-hf-e1q"/>
+                <outlet property="userImageView" destination="C7H-Lf-419" id="RHS-LQ-eUD"/>
+            </connections>
+            <point key="canvasLocation" x="369.56521739130437" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="20181124063727" width="512" height="341"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

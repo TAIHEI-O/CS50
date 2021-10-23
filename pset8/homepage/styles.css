@@ -1,0 +1,349 @@
+header
+{
+    background-color: #ffffff;
+}
+
+body
+{
+    background-color: #fff5b1;
+}
+
+.index
+{
+    height: 800px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.index a
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: 4.6em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.index a:hover span
+{
+    color: blue;
+    position: relative;
+}
+
+.top
+{
+    margin: 10px auto;
+    width: 980px;
+    display: flex;
+    align-items: center;
+    flex: 0 0;
+    font-size: 2rem;
+}
+
+.top a
+{
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.gnavi
+{
+    height: 80px;
+    background-color: #eaf3ff;
+    box-shadow: 0 3px 6px -3px #000000 inset;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.gnavi_inner
+{
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.gnavi ul
+{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0 -20px;
+}
+
+.gnavi li
+{
+    flex: 1 1;
+    position: relative;
+    display: flex;
+}
+
+.gnavi li::after
+{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color: #b8b9dc;
+    position: absolute;
+    right: -1px;
+    top: calc((100% - 20px) / 2);
+}
+
+.gnavi li:last-child::after
+{
+    content: none;
+}
+
+.gnavi a
+{
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.gnavi a:hover span
+{
+    color: #ff7600;
+    position: relative;
+}
+
+.gnavi a:hover span::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    background-color: #ff7600;
+    border-radius: 5px;
+}
+
+.gnavi span
+{
+    display: flex;
+    align-items: center;
+    word-break: keep-all;
+}
+
+.gnavi_inner ul li a
+{
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+}
+
+.title
+{
+    border-bottom: solid 2px #c30;
+    font-weight: bold;
+    color: #c30;
+    font-family: 'Amatic SC', cursive;
+}
+
+.home_titles
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home_titles a
+{
+    text-decoration: none;
+}
+
+.home_titles a:hover span
+{
+    color: #ff7600;
+    position: relative;
+}
+
+.home_title
+{
+    width: 33%;
+    height: 270px;
+    background: #ffa916;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_title a
+{
+    color: #ffffff;
+    font-family: 'Amatic SC', cursive;
+}
+
+.gnavi_inner_home
+{
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.gnavi_inner_home p
+{
+    text-align: center;
+    color: #ff7600;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.profile
+{
+    text-align: center;
+}
+
+.profile li
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.profile p
+{
+    font-size: 1.6em;
+    font-weight: 200;
+    font-family: 'Caveat', cursive;
+}
+
+.profile a
+{
+    text-decoration: underline dashed 1px;
+    color: blue
+}
+
+.hobbies li
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.hobbies p
+{
+    padding-left: 20px;
+    font-size: 1.6em;
+    font-weight: 200;
+    font-family: 'Caveat', cursive;
+}
+
+.hobbies a
+{
+    text-decoration: underline dashed 1px;
+    color: blue
+}
+
+.speciality li
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.speciality p
+{
+    padding-left: 20px;
+    font-size: 1.6em;
+    font-weight: 200;
+    font-family: 'Caveat', cursive;
+}
+
+.character p
+{
+    padding-left: 70px;
+    font-size: 1.6em;
+    font-weight: 200;
+    font-family: 'Caveat', cursive;
+}
+
+.favorite li
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.favorite th
+{
+    padding-left: 30px;
+    font-size: 1.2em;
+    font-weight: normal;
+    font-family: 'Caveat', cursive;
+}
+
+.favorite td
+{
+    padding-left: 30px;
+    font-size: 1.6em;
+    font-weight: 200;
+    font-family: 'Caveat', cursive;
+}
+
+.favorite p
+{
+    padding-left: 30px;
+    font-size: 1.6em;
+    font-weight: 200;
+    font-family: 'Caveat', cursive;
+}
+
+.favorite a
+{
+    text-decoration: underline dashed 1px;
+    color: blue
+}
+
+.fade
+{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn
+{
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.img_slidein
+{
+    opacity: 0;
+    animation-name: img_slideIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img_slideIn
+{
+    0%{opacity: 0; transform: translateY(-50px);}
+    100%{opacity: 1; transform: translateY(0);}
+}
+
+.slidein
+{
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn
+{
+    0%{opacity: 0; transform: translateY(50px);}
+    100%{opacity: 1; transform: translateY(0);}
+}
